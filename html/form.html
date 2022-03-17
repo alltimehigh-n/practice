@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 1px solid red;
+            
+        }
+        div{
+            border: 1px solid yellow;
+            
+        }
+    </style>
+</head>
+<body>
+        <!-- form: input, select, option, button, label, textarea -->
+        <h1>แบบฟอร์มลงทะเบียน</h1>
+        <form>
+            <div>
+                <label for="firstname">ชื่อจริง</label>
+                <input type="text" name="fname" placeholder="ป้อนชื่อจริงของคุณ" required>
+            </div>
+            <div>
+                <label for="lastname">นามสกุล</label>
+                <input type="text" name="lname" placeholder="ป้อนนามสกุลของคุณ" required>
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input type="email" name="email"  required>
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input type="password" name="password" >
+            </div>
+            <div>
+                <label for="">ที่อยู่</label>
+                <textarea name="" id="" cols="20" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="age">age</label>
+                <input type="number" name="age" min="1" value="2" readonly>
+            </div>
+            <div>
+                <label for="bday">วันเกิด</label>
+                <input type="date" name="bday">
+            </div>
+            <div>
+                <label for="tel">tel</label>
+                <input type="tel" name="tel">
+            </div>
+            <div>
+                <label for="color">color</label>
+                <input type="color" name="color">
+            </div>
+            <div>
+                <label for="range">range</label>
+                <input type="range" name="range">
+            </div>
+            <div>
+                <label for="edu">ระดับการศึกษา</label>
+                <select name="educate" id="edu">
+                    <option value="high">มัธยม</option>
+                    <option value="ปริญญาตรี" selected>ปริญญาตรี</option>
+                </select>
+            </div>
+            <div>
+                <label for="gender">เพศ</label>
+                <input type="radio" name="gender" id="">ชาย
+                <input type="radio" name="gender" id="">หญิง
+            </div>
+            <div>
+                <label for="fav">สิ่งที่ชอบ</label>
+                <input type="checkbox" name="fav">test
+                <input type="checkbox" name="fav">test
+                <input type="checkbox" name="fav">test
+            </div>
+            <div>
+                <label for="">แนบเอกสาร</label>
+                <input type="file" name="" id="">
+            </div>
+            <div>
+                <label for="">website ของคุณ</label>
+                <input type="url" name="" id="">
+            </div>
+            <div>
+                <input type="submit" value="บันทึกข้อมูล">
+            </div>
+        </form>
+</body>
+</html>

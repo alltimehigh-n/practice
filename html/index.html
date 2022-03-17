@@ -6,6 +6,15 @@
         <!-- ข้อความที่แสดงชื่อหน้าเว็บเพจบน tab ของ browser -->
         <title>Document</title>
 
+        <style>
+            div{
+                border: 1px solid red;
+            }
+            span{
+                border: 1px solid green;
+            }
+        </style>
+
     </head>
     <body>
         
@@ -56,6 +65,67 @@
             <img src="https://www.whatphone.net/wp-content/uploads/2015/12/new-google-logo.jpg" alt="" width="120px">
         </a>
 
+        <!-- lists - orderlist(ol), unorderlist(ul) -->
+        <!-- ol type="รูปแบบการแสดงผล": a, A, i, defaultเป็นตัวเลข -->
+        <ol type="a">
+            <li>หัวข้อที่1</li>
+            <li>หัวข้อที่2</li>
+        </ol>
+
+        <!-- ul type="": disc, circle square -->
+        <ul type="square">
+            <li>1</li>
+            <li>2</li>
+        </ul>
+
+        <!-- table -->
+        <h1>Table</h1>
+        <table border="1" width="50%" >
+            <thead>
+                <th>ชื่อสินค้า</th>
+                <th>ภาพสินค้า</th>
+                <th>ราคา</th>
+                <th>สั่งซื้อ</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="" width="120px"></td>
+                    <td>สลัด</td>
+                    <td>120</td>
+                    <td rowspan="2"><a href="">link</a></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__480.jpg" alt="" width="120px"></td>
+                    <td>สลัด</td>
+                    <td>120</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        ราคารวม
+                    </td>
+                    <td colspan="2"></td>
+                    <td>
+                        240
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- tag div, span -->
+       <span>test</span>
+       <span>test</span>
+       <span>test</span>
+       <hr>
+       <div>test</div>
+       <div>test</div>
+       <div>test</div>
+
+       
+       
+        
         
         
     </body>
